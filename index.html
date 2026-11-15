@@ -2,6 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <link rel="stylesheet" href="main.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
 
 <title>PM Programming | coldHalo_</title>
 
@@ -17,12 +18,28 @@
 
 <body>
     <div id="header">
-        <button onclick="scrolldiv('about-me')" id="about-button" type="submit">
-            About
+        <button onclick="scrolldiv('about-me')" class="header-button" id="about-button" type="submit">
+            About Me
         </button>
 
-        <button onclick="scrolldiv('projects')" id="portfolio-button" type="submit">
-            Portfolio
+        <button onclick="scrolldiv('skills')" class="header-button" id="skills-button" type="submit">
+            Skills
+        </button>
+
+        <button onclick="scrolldiv('projects')" class="header-button" id="project-button" type="submit">
+            Projects
+        </button>
+
+        <button onclick="scrolldiv('education')" class="header-button" id="education-button" type="submit">
+            Education
+        </button>
+
+        <button onclick="scrolldiv('brand')" class="header-button" id="brand-button" type="submit">
+            My Brand
+        </button>
+
+        <button onclick="scrolldiv('contact-me')" class="header-button" id="contact-button" type="submit">
+            Contact Me
         </button>
     </div>
 
@@ -34,7 +51,7 @@
                 <h2 class="intro-slogan"><span id="blue">Beginner</span> Software Engineer</h2>
                 <h2 class="intro-slogan">Take a look at...</h2>
 
-                <div class="btngroup">
+                <div class="button-group">
                     <button onclick="scrolldiv('projects')" class="button">
                         <span class="button-text">My Projects</span>
                     </button>
@@ -108,6 +125,7 @@
 
         <div id="projects">
             <h1 class="section-title">Projects</h1>
+            <h2 class="normal-text">Here are some projects that I've contributed to or in the process of producing.</h2>
             <div class="project-cards">
 
                 <div class="container-proj">
@@ -134,11 +152,13 @@
                     </div>
 
                     <div class="buttons-projects">
-                        <a href="https://github.com/coldHalo/web" target="_blank">
+                        <a href="https://github.com/coldHalo/web" class="a-projects" target="_blank">
                             <button class="github">
-                                <img src="assets/github.webp" alt="Github" width="20px" height="auto">Github Repo</button>
+                                <img src="assets/github.webp" alt="Github" width="20px" height="auto">
+                                Github Repo
+                            </button>
                         </a>
-                        <a href="website.html">
+                        <a href="website.html" class="a-projects">
                             <button class="project-website">Find out more</button>
                         </a>
                     </div>
@@ -147,6 +167,16 @@
                 <div class="container-proj">
                     <h2 class="skills-title">File manager in C++</h2>
                     <p class="normal-text">A terminal file manager, more advanced than the typical windows directory manager.</p>
+
+                    <div class="skills-used">
+                        <div class="section-cards">
+                            <div class="container-skills-used">
+                                <h2 class="normal-text">C++</h2>
+                                <img id="cpp" src="assets/c++.png" alt="C++" width="110px" height="auto">
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="buttons-projects">
                         <a href="https://github.com/coldHalo/web">
                             <button class="github">
@@ -170,6 +200,9 @@
                                 Github Repo
                             </button>
                         </a>
+                        <a href="unreal-project.html">
+                            <button class="project-website">Find out more</button>
+                        </a>
                     </div>
                 </div>
 
@@ -188,7 +221,22 @@
 
         <div id="education">
             <h1 class="section-title">Education</h1>
-            <h2 class="normal-text">Information</h2>
+            <h2 class="normal-text">My roadmap of all my educational courses and content I've covered from School to University.</h2>
+
+            <div id="education-in">
+                <div class="education-card-left">
+
+                </div>
+
+                <div class="education-card-right">
+
+                </div>
+
+                <div id="tbc-education">
+
+                </div>
+            </div>
+
         </div>
 
         <div id="brand">
@@ -222,6 +270,9 @@
                 </form>
                 <h2 class="normal-text">Powered by <a href="https://web3forms.com/">Web3Forms</a></h2>
             </div>
+
+            <h2 class="normal-text">Alternatively, you could email me at <a href="mailto:contact@pmprogramming.dpdns.org">contact@pmprogramming.dpdns.org</a>, message me on my <a href="https://github.com/coldHalo">GitHub</a> or on my <a href="https://www.linkedin.com/in/prestonmeakin/">LinkedIn</a>.</h2>
+
         </div>
 
 
