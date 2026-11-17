@@ -2,53 +2,58 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <link rel="stylesheet" href="main.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-
-<title>PM Programming | coldHalo_</title>
-
+<meta name="description" content="Portfolio Website for Preston and his brand PM Programming completely made from scratch.">
 <script src="main.js"></script>
 
 <head>
-    <title></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <title>PM Programming | coldHalo_</title>
 </head>
 
 <body>
     <div id="header">
         <button onclick="scrolldiv('about-me')" class="header-button" id="about-button" type="submit">
-            About Me
+            <span class="header-text">About Me</span>
         </button>
 
         <button onclick="scrolldiv('skills')" class="header-button" id="skills-button" type="submit">
-            Skills
+            <span class="header-text">Skills</span>
         </button>
 
-        <button onclick="scrolldiv('projects')" class="header-button" id="project-button" type="submit">
-            Projects
-        </button>
+        <div class="dropdown">
+            <button onclick="scrolldiv('projects')" class="header-button" id="project-button" type="submit">
+                <span class="header-text">Projects</span>
+            </button>
+            <div class="projects-dropdown">
+                <a href="file-manager.html">File Manager C++</a>
+                <a href="website.html">Portfolio Website</a>
+                <a href="unreal-project.html">Unreal 5 Project</a>
+            </div>
+        </div>
+
 
         <button onclick="scrolldiv('education')" class="header-button" id="education-button" type="submit">
-            Education
+            <span class="header-text">About Me</span>
         </button>
 
         <button onclick="scrolldiv('brand')" class="header-button" id="brand-button" type="submit">
-            My Brand
+            <span class="header-text">My Brand</span>
         </button>
 
         <button onclick="scrolldiv('contact-me')" class="header-button" id="contact-button" type="submit">
-            Contact Me
+            <span class="header-text">Contact Me</span>
         </button>
     </div>
 
     <div class="fadeIn-animation">
         <div id ="introduction-border">
             <div id="introduction-content">
-                <h1 class="intro-title" >My name is...</h1>
+                <h1 class="intro-title">My name is...</h1>
                 <h1 class="intro-name">Preston</h1>
-                <h2 class="intro-slogan"><span id="blue">Beginner</span> Software Engineer</h2>
+                <h2 class="intro-slogan">Beginner Software Engineer</h2>
                 <h2 class="intro-slogan">Take a look at...</h2>
 
                 <div class="button-group">
@@ -121,6 +126,52 @@
                 </div>
 
             </div>
+
+            <h2 class="section-title">Tools/DevOps:</h2>
+
+            <div class="section-cards">
+                <div class="container">
+                    <img src="assets/vsc.png" alt="VSC" class="images">
+                    <h2 class="normal-text">Visual Studio Code</h2>
+                    <p class="normal-text">Used for general programing.</p>
+                </div>
+
+                <div class="container">
+                    <img src="assets/vs.png" alt="Visual Studio" class="images">
+                    <h2 class="normal-text">Visual Studio</h2>
+                    <p class="normal-text">Used for C#, C++ and C.</p>
+                </div>
+
+                <div class="container">
+                    <img src="assets/git.png" alt="Git" class="images">
+                    <h2 class="normal-text">Git</h2>
+                    <p class="normal-text">Used for revision control and backups.</p>
+                </div>
+
+                <div class="container">
+                    <img src="assets/clion.png" alt="CLion" class="images">
+                    <h2 class="normal-text">CLion</h2>
+                    <p class="normal-text">Used for C++.</p>
+                </div>
+
+                <div class="container">
+                    <img src="assets/github.webp" alt="Github" class="images">
+                    <h2 class="normal-text">Github</h2>
+                    <p class="normal-text">Used for project management and CI/CD pipeline.</p>
+                </div>
+
+                <div class="container">
+                    <img src="assets/figma.png" alt="Figma" class="images">
+                    <h2 class="normal-text">Figma</h2>
+                    <p class="normal-text">Used for UI prototypes or creation.</p>
+                </div>
+
+                <div class="container">
+                    <img src="assets/vercel.png" alt="Vercel" class="images">
+                    <h2 class="normal-text">Vercel</h2>
+                    <p class="normal-text">Used for automatic deployment for my website.</p>
+                </div>
+            </div>
         </div>
 
         <div id="projects">
@@ -180,7 +231,7 @@
                     <div class="buttons-projects">
                         <a href="https://github.com/coldHalo/web">
                             <button class="github">
-                                <img class="github-img" src="assets/github.webp" alt="Github" width="20px" height="auto">
+                                <img id="github-img" src="assets/github.webp" alt="Github" width="20px" height="auto">
                                 Github Repo
                             </button>
                         </a>
@@ -193,6 +244,16 @@
                 <div class="container-proj">
                     <h2 class="skills-title">Total Wipeout Project in UE5</h2>
                     <p class="normal-text">I used visual Unreal Engine code to create mechanics inside a total wipeout style minigame.</p>
+
+                    <div class="skills-used">
+                        <div class="section-cards">
+                            <div class="container-skills-used">
+                                <h2 class="normal-text">Unreal</h2>
+                                <img id="ue5" src="assets/unreal.png" alt="Unreal" width="110px" height="auto">
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="buttons-projects">
                         <a href="https://github.com/coldHalo/web" target="_blank">
                             <button class="github">
@@ -208,12 +269,15 @@
 
                 <div class="container-proj">
                     <h2 class="skills-title">Roblox Game</h2>
-                    <p class="normal-text">This is a WIP, I am tasking as the programmer for this project, coding in Lua/U.</p>
-                    <div class="buttons-projects">
-                        <a href="roblox.html">
-                            <button class="project-website">Find out more</button>
-                        </a>
+                    <p class="normal-text">This is a WIP, I am tasked as the programmer for this project, coding in Lua/U. This will be available to see on my portfolio once it's complete.</p>
 
+                    <div class="skills-used">
+                        <div class="section-cards">
+                            <div class="container-skills-used">
+                                <h2 class="normal-text">Luau</h2>
+                                <img id="luau" src="assets/luau.webp" alt="Luau" width="110px" height="auto">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -225,15 +289,21 @@
 
             <div id="education-in">
                 <div class="education-card-left">
-
+                    <h1 class="skills-title">Leesbrook Academy</h1>
+                    <h1 class="edu-title">2020-2025</h1>
+                    <h1 class="normal-text">At GCSE, I specifically chose to study Computer Science, Interactive Media and Graphic Design. At this time, I realised that working in IT was for me.</h1>
                 </div>
 
                 <div class="education-card-right">
-
+                    <h1 class="skills-title">Derby College</h1>
+                    <h1 class="edu-title">2025-Present</h1>
+                    <h1 class="normal-text">I am currently studying a BTEC Level 3 National Extended Diploma in Creative Media Practice, aka a Games Design course.</h1>
                 </div>
 
-                <div id="tbc-education">
-
+                <div class="education-card-left">
+                    <h1 class="skills-title">In the future...</h1>
+                    <h1 class="edu-title">2027-TBC</h1>
+                    <h1 class="normal-text">After I've finished studying at college, I plan to go to university or go into an apprenticeship within the software engineering industry. I have already applied to universities around the east midlands for IT related courses such as Cybersecurity and Computer Science. I hope to get my chosen courses.</h1>
                 </div>
             </div>
 
@@ -241,7 +311,13 @@
 
         <div id="brand">
             <h1 class="section-title">My Brand</h1>
-            <h2 class="normal-text">Information</h2>
+            <h2 class="normal-text">My brand includes a logo, colour scheme and font that all make my brand.</h2>
+
+            <div id="">
+
+
+            </div>
+
         </div>
 
         <div id ="contact-me">
@@ -250,29 +326,28 @@
             <div id="contact-me-form">
                 <form action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="3cdb7c54-9b66-4132-98ec-058158915995">
-                    <label for="contact-me">Subject:
+                    <label for="contact-me" class="normal-text">Subject:
                         <input name="subject" type="text"  class="form-input" width="100%" height="100px" placeholder="Enter a subject..." required>
                     </label>
 
-                    <label for="contact-me">Message:
+                    <label for="contact-me" class="normal-text">Message:
                         <textarea name="message" type="text" class="form-input" placeholder="Enter a message..." required></textarea>
                     </label>
 
-                    <label for="contact-me">Email Address:
+                    <label for="contact-me" class="normal-text">Email Address:
                         <input name="email" type="email" class="form-input" width="100%" height="100px" placeholder="Enter an email address..." required>
                     </label>
 
-                    <label for="contact-me">Name (optional):
+                    <label for="contact-me" class="normal-text">Name (optional):
                         <input name="name" type="text" class="form-input" width="100%" height="100px" placeholder="Enter a name..." required>
                     </label>
 
-                    <button type="submit">Submit</button>
+                    <button id="submit-contact-form" type="submit">Submit</button>
                 </form>
                 <h2 class="normal-text">Powered by <a href="https://web3forms.com/">Web3Forms</a></h2>
             </div>
 
             <h2 class="normal-text">Alternatively, you could email me at <a href="mailto:contact@pmprogramming.dpdns.org">contact@pmprogramming.dpdns.org</a>, message me on my <a href="https://github.com/coldHalo">GitHub</a> or on my <a href="https://www.linkedin.com/in/prestonmeakin/">LinkedIn</a>.</h2>
-
         </div>
 
 
