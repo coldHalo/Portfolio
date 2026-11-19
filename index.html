@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-<link rel="stylesheet" href="main.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Portfolio Website for Preston and his brand PM Programming completely made from scratch.">
-<script src="main.js"></script>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Website for Preston and his brand PM Programming completely made from scratch.">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <title>PM Programming | coldHalo_</title>
+    <title>PM Programming | Portfolio</title>
 </head>
 
 <body>
@@ -28,15 +28,15 @@
                 <span class="header-text">Projects</span>
             </button>
             <div class="projects-dropdown">
-                <a href="file-manager.html">File Manager C++</a>
-                <a href="website.html">Portfolio Website</a>
-                <a href="unreal-project.html">Unreal 5 Project</a>
+                <a href="file-manager/index.html">File Manager C++</a>
+                <a href="website/index.html">Portfolio Website</a>
+                <a href="unreal-project/index.html">Unreal 5 Project</a>
             </div>
         </div>
 
 
         <button onclick="scrolldiv('education')" class="header-button" id="education-button" type="submit">
-            <span class="header-text">About Me</span>
+            <span class="header-text">Education</span>
         </button>
 
         <button onclick="scrolldiv('brand')" class="header-button" id="brand-button" type="submit">
@@ -46,6 +46,8 @@
         <button onclick="scrolldiv('contact-me')" class="header-button" id="contact-button" type="submit">
             <span class="header-text">Contact Me</span>
         </button>
+
+
     </div>
 
     <div class="fadeIn-animation">
@@ -54,35 +56,109 @@
                 <h1 class="intro-title">My name is...</h1>
                 <h1 class="intro-name">Preston</h1>
                 <h2 class="intro-slogan">Beginner Software Engineer</h2>
-                <h2 class="intro-slogan">Take a look at...</h2>
+                <h2 class="intro-slogan">Take a look at my...</h2>
 
                 <div class="button-group">
-                    <button onclick="scrolldiv('projects')" class="button">
-                        <span class="button-text">My Projects</span>
-                    </button>
-                    <button onclick="scrolldiv('about-me')" class="button">
-                        <span class="button-text">About Me</span>
-                    </button>
-                    <button onclick="scrolldiv('skills')" class="button">
-                        <span class="button-text">Languages</span>
-                    </button>
-                    <button onclick="scrolldiv('education')" class ="button">
-                        <span class="button-text">Education</span>
-                    </button>
-                    <button onclick="scrolldiv('brand')" class ="button">
-                        <span class="button-text">Brand</span>
-                    </button>
+                    <a href="https://github.com/coldHalo">
+                        <button class="button">
+                            <span class="button-text">Github</span>
+                        </button>
+                    </a>
+
+                    <a href="https://tryhackme.com/p/coldhalo">
+                        <button class="button">
+                            <span class="button-text">TryHackMe</span>
+                        </button>
+                    </a>
+
+                    <a href="https://codeforces.com/profile/coldHal0_">
+                        <button class="button">
+                            <span class="button-text">Codeforces</span>
+                        </button>
+                    </a>
+
+                    <a href="blog/index.html">
+                        <button class="button">
+                            <span class="button-text">Blog</span>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
 
         <div id="about-me">
             <h1 class="section-title">About Me</h1>
-            <h2 class="normal-text">I'm Preston, located in Derby, United Kingdom, and I'm fairly new to the Software Engineering space.
+            <h2 class="normal-text">I'm Preston, 17 years old, located in Derby, United Kingdom, and I'm fairly new to the Software Engineering space.
                 I'm currently studying in Derby College for a BTEC Level 3 National Extended Diploma in Creative Media Practice.
                 I aspire to be a Software Engineer or an Unreal Engine programmer (C++).
                 I also have interests in Cybersecurity and Computer Science.
+                I enjoy prototyping UI/UX for my Roblox game or Qt projects in Figma as well as sharing feedback in small communities.
             </h2>
+
+            <h1 class="section-title">
+                Some fun facts about me
+            </h1>
+            <h2 class="skills-title">
+                • I enjoy watching football
+            </h2>
+            <h2 class="normal-text">
+                On the weekends, I watch or goto the football as it has been an interest of mine since I was young.
+            </h2>
+            <h2 class="skills-title">
+                • I watch CS2 Esports
+            </h2>
+            <h2 class="normal-text">
+                I enjoy analysing and looking at different strategies and comparing them to the average player.
+            </h2>
+            <h2 class="skills-title">
+                • I am learning Russian
+            </h2>
+            <h2 class="normal-text">
+                I have been learning for a couple of weeks and I hope to get a great understanding of it soon.
+            </h2>
+
+            <h1 class="section-title">
+                My Goals
+            </h1>
+            <h2 class="skills-title">
+                Short-Term
+            </h2>
+            <h1 class="normal-text">
+                • Finish my college course and go into university with a strong mentality.
+            </h1>
+            <h1 class="normal-text">
+                • Fill my portfolio with fun projects that show my technical skills well.
+            </h1>
+            <h1 class="normal-text">
+                • Expand my programming skills and learn more languages.
+            </h1>
+
+            <h2 class="skills-title">
+                Medium-Term
+            </h2>
+            <h1 class="normal-text">
+                • Become comfortable within the Software Engineering space.
+            </h1>
+            <h1 class="normal-text">
+                • Have experienced working with other engineers and learning from them.
+            </h1>
+            <h1 class="normal-text">
+                • Deepen my Computer Science and Cybersecurity fundamentals.
+            </h1>
+
+            <h2 class="skills-title">
+                Long-Term
+            </h2>
+            <h1 class="normal-text">
+                • Move into a Junior role in Software Engineer or Computer Science.
+            </h1>
+            <h1 class="normal-text">
+                • Have my own business.
+            </h1>
+            <h1 class="normal-text">
+                • Contribute to making a game-changer tool in the industry.
+            </h1>
+
 
         </div>
 
@@ -122,12 +198,23 @@
                     <img src="assets/asm.png" alt="Assembly" class="images">
 
                     <h2 class="normal-text">Assembly</h2>
-                    <p class="normal-text">Beginner/ Intermediate level. </p>
+                    <p class="normal-text">Beginner/ Intermediate level, not used in long time.</p>
+                </div>
+
+                <div class="container">
+                    <img src="assets/luau.webp" alt="Luau" class="images">
+
+                    <h2 class="normal-text">Luau</h2>
+                    <p class="normal-text">Intermediate level, only used in Roblox.</p>
                 </div>
 
             </div>
 
-            <h2 class="section-title">Tools/DevOps:</h2>
+            <h2 class="normal-text">
+                I am mainly working on <span class="bold">Luau</span> and <span class="bold">C++</span> right now.
+            </h2>
+
+            <h2 class="section-title">Tools/DevOps: </h2>
 
             <div class="section-cards">
                 <div class="container">
@@ -151,7 +238,7 @@
                 <div class="container">
                     <img src="assets/clion.png" alt="CLion" class="images">
                     <h2 class="normal-text">CLion</h2>
-                    <p class="normal-text">Used for C++.</p>
+                    <p class="normal-text">Used for C++. Main IDE.</p>
                 </div>
 
                 <div class="container">
@@ -209,7 +296,7 @@
                                 Github Repo
                             </button>
                         </a>
-                        <a href="website.html" class="a-projects">
+                        <a href="website/index.html" class="a-projects">
                             <button class="project-website">Find out more</button>
                         </a>
                     </div>
@@ -229,13 +316,13 @@
                     </div>
 
                     <div class="buttons-projects">
-                        <a href="https://github.com/coldHalo/web">
+                        <a href="https://github.com/coldHalo/file-manager-cpp">
                             <button class="github">
                                 <img id="github-img" src="assets/github.webp" alt="Github" width="20px" height="auto">
                                 Github Repo
                             </button>
                         </a>
-                        <a href="file-manager.html">
+                        <a href="file-manager/index.html">
                             <button class="project-website">Find out more</button>
                         </a>
                     </div>
@@ -261,7 +348,7 @@
                                 Github Repo
                             </button>
                         </a>
-                        <a href="unreal-project.html">
+                        <a href="unreal-project/index.html">
                             <button class="project-website">Find out more</button>
                         </a>
                     </div>
