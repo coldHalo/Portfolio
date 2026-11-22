@@ -9,6 +9,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
 </head>
+
+<body>
+    <div id="header">
+        <a href="../index.html">
+            <button class="header-button" id="project-button" type="submit">
+                <span class="header-text">Portfolio</span>
+            </button>
+        </a>
+        <div class="dropdown">
+            <button onclick="scrolldiv('blogs-list')" class="header-button" id="project-button" type="submit">
+                <span class="header-text">Blogs</span>
+            </button>
+            <div class="projects-dropdown">
+                <a href="blog-1.html">Blog 1</a>
+                <a href="blog-2.html">Blog 2</a>
+                <a href="blog-3.html">Blog 3</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="fadeIn-animation">
+        <div class="blogs">
+            <h1 class="section-title">My Blog</h1>
+            <h2 class="normal-text">This is the page where I will write blog pages about <span class="bold">strange</span> problems I faced in the making of my projects, or topics that interest me.</h2>
+        </div>
+
+        <div class="blogs-list">
+            <h1 class="section-title">Current Published Blogs</h1>
+            <h2 class="normal-text">Blog Title - Time Published</h2>
+        </div>
+    </div>
+</body>
+
 </html>

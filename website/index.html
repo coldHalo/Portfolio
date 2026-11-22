@@ -12,6 +12,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
 </head>
+
+<body>
+    <div id="header">
+        <button onclick="scrolldiv('about-me')" class="header-button" id="about-button" type="submit">
+            <span class="header-text">About Me</span>
+        </button>
+
+        <button onclick="scrolldiv('skills')" class="header-button" id="skills-button" type="submit">
+            <span class="header-text">Skills</span>
+        </button>
+
+        <div class="dropdown">
+            <button onclick="scrolldiv('projects')" class="header-button" id="project-button" type="submit">
+                <span class="header-text">Projects</span>
+            </button>
+            <div class="projects-dropdown">
+                <a href="../file-manager/index.html">File Manager C++</a>
+                <a href="../website/index.html">Portfolio Website</a>
+                <a href="../unreal-project/index.html">Unreal 5 Project</a>
+            </div>
+        </div>
+
+
+        <button onclick="scrolldiv('education')" class="header-button" id="education-button" type="submit">
+            <span class="header-text">Education</span>
+        </button>
+
+        <button onclick="scrolldiv('brand')" class="header-button" id="brand-button" type="submit">
+            <span class="header-text">My Brand</span>
+        </button>
+
+        <button onclick="scrolldiv('contact-me')" class="header-button" id="contact-button" type="submit">
+            <span class="header-text">Contact Me</span>
+        </button>
+    </div>
+</body>
+
 </html>
